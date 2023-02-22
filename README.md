@@ -1,4 +1,4 @@
-#Message Generator
+# Message Generator
 
 Author: Dylan Varga
 
