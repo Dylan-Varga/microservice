@@ -37,7 +37,6 @@ amqp.connect('amqp://localhost', function(error0, connection) {
 
         //optional
         //console.log(" [*] Waiting for messages in %s.", queue);
-        while(True){
             channel.consume(queue, function(msg) {
                 //optional
                 //console.log(" [x] Received %s", msg.content.toString());
@@ -48,6 +47,5 @@ amqp.connect('amqp://localhost', function(error0, connection) {
             }, {
                 noAck: true
             });
-        }
     });
 });
